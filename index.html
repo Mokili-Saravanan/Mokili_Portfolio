@@ -3,135 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sri | Cybersecurity Portfolio</title>
+  <title>Mokili Saravanan | Cybersecurity Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="container nav">
-      <h1 class="logo"> Mokili ! </h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- ================= HEADER ================= -->
+  <header class="top-bar">
+    <div class="name">
+      <span class="first">Mokili</span>
+      <span class="last">Saravanan</span>
     </div>
+
+    <button class="resume-btn" onclick="openModal()">
+      Download Resume
+    </button>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h2>Cybersecurity Graduate | SOC & Threat Detection</h2>
+  <!-- ================= HERO ================= -->
+  <main class="hero">
+
+    <div class="profile-img">
+      <img src="profile.jpg" alt="Mokili Saravanan">
+    </div>
+
+    <h1 class="role">
+      Cybersecurity Graduate | SOC & Threat Detection
+    </h1>
+
+    <p class="intro">
+      SOC L1 in preparation. Curious analyst mindset with a focus on
+      detection, incident response, and understanding attacks end-to-end.
+    </p>
+
+    <!-- ================= NAV PILLS ================= -->
+    <nav class="pill-nav">
+      <a href="#about">👤 About Me</a>
+      <a href="#experience">💼 Experience</a>
+      <a href="#projects">📄 Projects</a>
+      <a href="#skills">⚡ Skills</a>
+      <a href="#contact">📞 Contact</a>
+    </nav>
+
+  </main>
+
+  <!-- ================= RESUME WARNING MODAL ================= -->
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <h3>Before You Click</h3>
+
       <p>
-        I build detection systems, analyze security events, and turn raw logs
-        into actionable insights.
+        Malicious clicks are one of the biggest clickbait and
+        never-ending problems for security professionals.
+        <br><br>
+        Please proceed only when you trust the source completely.
       </p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a cybersecurity graduate with hands-on experience in SOC analysis,
-        SIEM monitoring, and threat detection. I enjoy understanding how attacks
-        work end-to-end and building practical detection and response solutions.
-      </p>
-      <p>
-        My focus areas include incident response, log analysis, anomaly detection,
-        and security monitoring using tools like Splunk.
-      </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section dark">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>SIEM (Splunk)</span>
-        <span>SOC Analysis</span>
-        <span>Incident Response</span>
-        <span>Threat Detection</span>
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Network Security</span>
-        <span>Linux</span>
-        <span>Log Analysis</span>
+      <div class="modal-actions">
+        <button onclick="closeModal()">Cancel</button>
+        <a href="resume.pdf" target="_blank" class="proceed">Proceed</a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Zero-Day Attack Detection System</h3>
-        <p>
-          Built a detection system using machine learning to identify anomalous
-          network behavior. Focused on reducing false positives and improving
-          detection accuracy.
-        </p>
-        <a href="https://github.com/yourusername/zero-day-detection" target="_blank">
-          View on GitHub →
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>SOC Lab with Splunk</h3>
-        <p>
-          Created a SOC environment with log ingestion, dashboards, alerts,
-          and incident triage workflows using Splunk.
-        </p>
-        <a href="https://github.com/yourusername/splunk-soc-lab" target="_blank">
-          View on GitHub →
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>Incident Response Playbooks</h3>
-        <p>
-          Developed structured incident response playbooks for phishing,
-          brute-force, and malware incidents.
-        </p>
-        <a href="https://github.com/yourusername/incident-response-playbooks" target="_blank">
-          View on GitHub →
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- RESUME -->
-  <section id="resume" class="section dark">
-    <div class="container">
-      <h2>Resume</h2>
-      <p>You can download my resume here:</p>
-      <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <strong>infosec.moli@gmail.com</strong></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/mokili-cyber" target="_blank">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/mokili-saravanan" target="_blank">github.com/yourusername</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 moli | Cybersecurity Portfolio</p>
-  </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
