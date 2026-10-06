@@ -1,218 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mokili Saravanan | Cybersecurity</title>
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mokili Saravanan | Cybersecurity Analyst Portfolio</title>
+<meta name="description" content="Cybersecurity master's graduate focused on SOC monitoring, incident triage and threat detection.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- TOP RIGHT RESUME -->
-  <button class="resume-btn" onclick="openModal()">Download Resume</button>
-
-  <!-- HERO NAME -->
-  <section class="hero-name">
-    <h1>MOKILI  SARAVANAN</h1>
-  </section>
-
-  <!-- PROFILE + INTRO -->
-  <section class="hero">
-    <div class="profile-img">
-      <img src="profile.jpg" alt="Mokili Saravanan">
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">Mokili Saravanan</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+      <a href="#certs">Certs</a><a href="#skills">Skills</a><a href="#tools">Tools</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="btns">
+      <!-- Put your resume in the repo root and name it resume.pdf -->
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a class="btn fill" href="resume.pdf" download="Mokili_Saravanan_Resume.pdf">Download</a>
     </div>
-    
-    <p class="role">
-      Cybersecurity Graduate | SOC & Threat Detection
-    </p>
+  </div>
+</header>
 
-    <p class="intro">
-      SOC L1 in preparation. Analyst mindset focused on detection,
-      response, and understanding attacks end-to-end.
-    </p>
-  </section>
-
-  <!-- SLIDING NAV -->
-  <nav class="slider-nav">
-    <div class="slider-bg"></div>
-
-    <a href="#about" class="nav-item active">👤 About</a>
-    <a href="#experience" class="nav-item">💼 Experience</a>
-    <a href="#projects" class="nav-item">📄 Projects</a>
-    <a href="#skills" class="nav-item">⚡ Skills</a>
-    <a href="#contact" class="nav-item">📞 Contact</a>
-  </nav>
-
-  <!-- MODAL -->
-  <div id="modal" class="modal">
-    <div class="modal-box">
-      <h3>Before You Click</h3>
-      <p>
-        Malicious clicks are one of the biggest clickbait and
-        never-ending problems for security professionals.
-        <br><br>
-        Please proceed only when you trust the source completely.
-      </p>
-      <div class="modal-actions">
-        <button onclick="closeModal()">Cancel</button>
-        <a href="resume.pdf" target="_blank" class="proceed">Proceed</a>
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <h1>Mokili Saravanan</h1>
+      <p class="role">Cybersecurity analyst, SOC and threat detection</p>
+      <p>I hold a master's degree in cybersecurity and have spent a year practising SOC work in hands-on labs: triaging alerts, reading logs and writing up what happened. I'm looking for my first analyst role where I can keep learning on real incidents.</p>
+      <div class="cta">
+        <a class="btn fill" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
       </div>
     </div>
-  </div>
-
-  <script src="js/script.js"></script>
-
-  <!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="profile.jpg" alt="Mokili Saravanan">
-    <p>
-      Curiosity is what pulled me into cybersecurity, especially understanding attacks,
-      their patterns, and how they’re stopped.
-      <br><br>
-      Most of my learning comes from hands-on work: building detection labs, analysing
-      Windows event logs, experimenting with Splunk, and studying attacker behaviour.
-      <br><br>
-      Blue-team work is where I naturally fit. Threat detection, SOC operations,
-      incident response, and MITRE technique mapping are areas I enjoy exploring deeply.
-      <br><br>
-      My goal is simple: keep sharpening my skills and become a strong, reliable defender
-      in this field.
-    </p>
+    <aside class="case" aria-label="At a glance">
+      <h3>At a glance</h3>
+      <dl>
+        <div><dt>Education</dt><dd>MSc Cybersecurity</dd></div>
+        <div><dt>Hands-on practice</dt><dd>1 year of SOC labs</dd></div>
+        <div><dt>Focus</dt><dd>Blue team, SOC</dd></div>
+        <div><dt>Also learning</dt><dd>Spanish</dd></div>
+        <div><dt>Status</dt><dd>Open to analyst roles</dd></div>
+      </dl>
+    </aside>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section alt">
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p>I got into cybersecurity because I like finding the story inside the data: which alert matters, how an attacker got in, and what to do next. My master's gave me the theory, and my lab practice taught me to apply it under time pressure.</p>
+  <p>Outside of security I work part-time on a maintenance team, where I learned to coordinate with others, stay calm when something breaks, and follow procedures carefully. Those habits carry straight over to incident response.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
   <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Security Operations Center Analyst (Home Lab)</h3>
-    <span>Self-Directed SOC Training · Aug 2025 – Present · Dublin (Remote)</span>
-    <p>
-      Actively building and managing my own SOC-style home lab where I practice
-      real blue-team workflows including log analysis, alert triage,
-      incident documentation, and detection engineering.
-    </p>
-    <ul>
-      <li>Windows logs & Sysmon ingestion into Splunk</li>
-      <li>Detection rules for brute force, PowerShell abuse, file drops</li>
-      <li>SOC-style alert triage → investigation → documentation</li>
-      <li>MITRE ATT&CK technique mapping</li>
-      <li>Attack simulations to study log artifacts</li>
-    </ul>
+  <div class="tl">
+    <article>
+      <h3>SOC lab practice (self-directed)</h3>
+      <p class="meta">About 1 year, hands-on labs and platforms</p>
+      <ul class="plain">
+        <!-- TODO: add numbers, e.g. "Investigated 50+ simulated alerts" -->
+        <li>Triaged simulated security alerts and decided what was a true or false positive.</li>
+        <li>Analysed logs and network traffic to trace attacker activity and map it to MITRE ATT&amp;CK.</li>
+        <li>Wrote short incident reports covering timeline, impact and recommended actions.</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Maintenance team member (part-time)</h3>
+      <p class="meta">[Company name], [Start year] to present</p>
+      <ul class="plain">
+        <li>Work in a team to find and fix faults quickly and safely.</li>
+        <li>Follow checklists and escalate issues to the right person, the same discipline used in incident handling.</li>
+      </ul>
+    </article>
+    <article>
+      <h3>MSc Cybersecurity</h3>
+      <p class="meta">[University name], [Graduation year]</p>
+      <ul class="plain"><li>[Key modules or dissertation topic, for example network defence, digital forensics, risk management.]</li></ul>
+    </article>
   </div>
+</div></section>
 
-  <div class="card">
-    <h3>Java Developer Intern</h3>
-    <span>Besoins Technology · Jul 2023 – Apr 2024 · India</span>
-    <p>
-      Assisted in development of Java-based web applications.
-      Worked on backend APIs, database integration, bug fixes,
-      and collaborated within an agile startup environment.
-    </p>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects"><div class="wrap">
   <h2>Projects</h2>
+  <div class="cards" id="projectCards"></div>
+</div></section>
 
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Zero-Day Attack Detection System</h3>
-      <img src="project1.png" alt="Zero Day Project">
-      <p>
-        Machine-learning-based detection system using simulated attacks,
-        feature extraction from logs, and classification models to identify
-        unknown threats.
-      </p>
-    </div>
+<section id="certs"><div class="wrap">
+  <h2>Certifications</h2>
+  <div class="cards" id="certCards"></div>
+</div></section>
 
-    <div class="project-card">
-      <h3>SOC Detection & Monitoring Lab</h3>
-      <img src="project2.png" alt="SOC Lab">
-      <p>
-        End-to-end SOC lab using Windows endpoints, Sysmon, Splunk dashboards,
-        alert creation, and incident documentation.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section alt">
+<section id="skills"><div class="wrap">
   <h2>Skills</h2>
+  <p style="color:var(--muted)">My own rating out of 5, updated as I learn.</p>
+  <div class="skills" id="skillList"></div>
+</div></section>
 
-  <div class="skills">
-    <div class="skill">
-      <span>SIEM (Splunk) – Log Analysis & Alerting</span>
-      <div class="bar"><div style="width:90%"></div></div>
-    </div>
+<section id="tools"><div class="wrap">
+  <h2>Tools I love</h2>
+  <div class="tools" id="toolList"></div>
+  <h3 class="sub">Find me on</h3>
+  <div class="profiles" id="profileList"></div>
+</div></section>
 
-    <div class="skill">
-      <span>Incident Detection & Response</span>
-      <div class="bar"><div style="width:85%"></div></div>
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>
+      <p>I'm open to SOC analyst, security analyst and graduate programme roles. Send me a message and I'll reply within a couple of days.</p>
+      <div class="cta"><a class="btn fill" id="mailBtn" href="#">Email me</a><a class="btn" href="resume.pdf" target="_blank" rel="noopener">View resume</a></div>
     </div>
-
-    <div class="skill">
-      <span>Threat Analysis & MITRE ATT&CK Mapping</span>
-      <div class="bar"><div style="width:80%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Network & Endpoint Security Monitoring</span>
-      <div class="bar"><div style="width:75%"></div></div>
-    </div>
+    <ul id="contactList"></ul>
   </div>
-</section>
+</div></section>
+</main>
 
-<!-- HOBBIES -->
-<section id="hobbies" class="section">
-  <h2>Hobbies & Practice</h2>
+<footer><div class="wrap">© <span id="yr"></span> Mokili Saravanan. Built by hand and hosted on GitHub Pages.</div></footer>
 
-  <div class="card">
-    <p>
-      • Building and sharing security labs on GitHub<br>
-      • Practicing CTF-style challenges to improve detection thinking<br>
-      • Studying real-world attacker behaviour and blue-team response<br>
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section alt">
-  <h2>Let’s work together</h2>
-
-  <div class="contact-wrapper">
-
-    <!-- CONTACT INFO -->
-    <div class="contact-info">
-  <p><span>📞</span> +353 89 251 4375</p>
-  <p><span>✉️</span> infosec.moli@gmail.com</p>
-  <p><span>🔗</span> <a href="#">LinkedIn Profile</a></p>
-  <p><span>📍</span> Dublin, Ireland</p>
-</div>
-
-
-    <!-- CONTACT FORM -->
-    <form class="contact-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="text" placeholder="Subject">
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-  </div>
-</section>
-
-</section>
-
+<script src="script.js"></script>
 </body>
 </html>
