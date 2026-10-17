@@ -1,5 +1,5 @@
 /* ===== EDIT YOUR DETAILS HERE ===== */
-const EMAIL = "infosec.moli@hmail.com";           // TODO
+const EMAIL = "infosec.moli@gmail.com";           // TODO
 const LINKEDIN = "https://www.linkedin.com/in/mokili-cyber/";   // TODO
 const GITHUB = "https://github.com/mokili-saravanan";
 const THM = "https://tryhackme.com/p/your-username";            // TODO
