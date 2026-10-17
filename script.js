@@ -1,6 +1,6 @@
 /* ===== EDIT YOUR DETAILS HERE ===== */
-const EMAIL = "your.email@example.com";           // TODO
-const LINKEDIN = "https://www.linkedin.com/in/your-profile/";   // TODO
+const EMAIL = "infosec.moli@hmail.com";           // TODO
+const LINKEDIN = "https://www.linkedin.com/in/mokili-cyber/";   // TODO
 const GITHUB = "https://github.com/mokili-saravanan";
 const THM = "https://tryhackme.com/p/your-username";            // TODO
 const HTB = "https://app.hackthebox.com/profile/your-id";       // TODO
