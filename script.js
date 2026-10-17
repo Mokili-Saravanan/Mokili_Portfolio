@@ -11,11 +11,6 @@ const projects = [
   {t:"Home lab: detection and monitoring", d:"Built a small virtual network, generated attack traffic and created detection rules to catch it. [Add what you detected.]", tags:["Virtualisation","Wireshark","Detection rules"], link:GITHUB},
   {t:"[Dissertation or capstone title]", d:"[One or two sentences: the problem, your method, and what you found.]", tags:["[Tool]","[Topic]"], link:GITHUB}
 ];
-const certs = [
-  {t:"[Certification name]", d:"[Issuer], [Year]"},
-  {t:"[Certification name]", d:"[Issuer], [Year]"},
-  {t:"MSc Cybersecurity", d:"[University], [Year]"}
-];
 const skills = [
   ["Log analysis and alert triage",4],["SIEM monitoring",3],["Incident response",3],
   ["Network security and traffic analysis",3],["Windows and Linux fundamentals",3],
@@ -36,9 +31,15 @@ $("projectCards").innerHTML = projects.map(p => `
   <ul class="tags">${p.tags.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
   <p style="margin:14px 0 0"><a class="more" href="${p.link}" target="_blank" rel="noopener">View on GitHub</a></p></article>`).join("");
 
-$("certCards").innerHTML = certs.map(c => `
-  <article class="card cert"><div class="badge" aria-hidden="true">🏅</div>
-  <div><h3>${esc(c.t)}</h3><p>${esc(c.d)}</p></div></article>`).join("");
+$("certCards").innerHTML = certs.map(c => {
+  const href = c.link || c.file;
+  return `<article class="card cert"><div class="badge" aria-hidden="true">🏅</div>
+  <div><h3>${esc(c.title)}</h3><p>${esc(c.issuer)} · ${esc(c.date)}</p>
+  ${href ? `<a class="more" href="${href}" target="_blank" rel="noopener">View certificate</a>` : ""}</div></article>`;
+}).join("");
+if (typeof BADGES_URL !== "undefined" && BADGES_URL) {
+  $("badgesBtn").href = BADGES_URL; $("badgesBtn").hidden = false;
+}
 
 $("skillList").innerHTML = skills.map(([n,r]) => `
   <div class="skill"><span>${esc(n)}</span>
